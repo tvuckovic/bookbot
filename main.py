@@ -1,5 +1,4 @@
-from stats import word_counter, char_counter, sort_on, sorted_list
-import sys
+from stats import *
 
 def get_book_text(rel_path):
     with open(rel_path) as book:
@@ -16,7 +15,6 @@ def report(path, num_words, sorted_list):
         if not char["char"].isalpha():
             continue
         print(f"{char["char"]}: {char["num"]}")
-    
     print("============= END ===============")
 
     
